@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/aaroh/Documents/koodailut/open-election-compass-client/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
