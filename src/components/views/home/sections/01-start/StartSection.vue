@@ -34,6 +34,8 @@ export default {
 <style lang="scss">
 .start-section {
   text-align: center;
+  background: #ee5b61;
+  color: white;
 }
 
 .start-section__logo {

@@ -181,13 +181,12 @@ export default {
 
 <style lang="scss">
 .statement-wrapper {
+  background: #ffb16f;
+  color: black;
   transition: opacity 0.2s ease-out;
   &.statement-wrapper--status-skip {
     opacity: 0.5;
     background-color: #f7fafc;
-  }
-  & + .statement-wrapper {
-    border-top: 2px solid var(--theme-neutral-background);
   }
 }
 

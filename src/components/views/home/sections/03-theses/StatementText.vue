@@ -177,6 +177,7 @@ export default {
 
 .statement-text__thesis {
   color: var(--base-color);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 1.35em;
   line-height: 1.25;
   font-weight: bold;
@@ -199,35 +200,11 @@ export default {
 .statement-text.statement-text--status-empty,
 .statement-text.statement-text--status-skip {
   .statement-text__thesis {
-    color: var(--theme-primary-color);
+    color: black;
   }
 }
 .statement-text.statement-text--status-skip .statement-text__thesis {
   text-decoration: line-through;
-}
-
-.statement-text__quote-start {
-  position: relative;
-  color: #e2e8f0;
-  span {
-    position: absolute;
-    right: 100%;
-  }
-  [dir='rtl'] &,
-  [dir='rtl'] & span {
-    position: static;
-  }
-}
-
-.statement-text__quote-end {
-  color: #e2e8f0;
-  [dir='rtl'] & {
-    position: relative;
-    span {
-      position: absolute;
-      left: 100%;
-    }
-  }
 }
 
 .statement-text__badges {

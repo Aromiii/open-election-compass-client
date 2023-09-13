@@ -107,8 +107,8 @@ export default {
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
   box-shadow: var(--shadow-normal);
-  background-color: var(--theme-neutral-background);
-  color: var(--theme-neutral-text);
+  background-color: #100122;
+  color: #ffffff;
   &:hover {
     box-shadow: var(--shadow-hover);
   }

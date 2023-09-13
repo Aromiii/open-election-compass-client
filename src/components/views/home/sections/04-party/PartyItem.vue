@@ -94,8 +94,7 @@ export default {
 }
 
 .party-item--selected .party-item__button {
-  border: 1px solid var(--theme-primary-border);
-  background-color: var(--theme-primary-background);
+  background-color: #7fdb82;
   color: var(--theme-primary-text);
 }
 

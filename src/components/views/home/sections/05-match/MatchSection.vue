@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 .match-section {
-  background-color: var(--theme-primary-color);
+  background-color: #ee5b61;
 }
 
 .match-section__heading {

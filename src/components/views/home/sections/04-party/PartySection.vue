@@ -66,11 +66,9 @@ export default {
 
 <style lang="scss">
 .party-section {
-  border-top: 2px solid var(--theme-neutral-background);
-}
-
-.party-section__heading {
-  color: var(--theme-primary-color);
+  border-top: 20px solid #ffb16f;
+  background: #d289e5;
+  color: white;
 }
 
 .party-section__introduction {

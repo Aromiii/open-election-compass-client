@@ -79,7 +79,7 @@ export default {
   transition-timing-function: ease-out;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-normal);
-  background-color: var(--theme-neutral-background);
+  background-color: #100122;
   color: var(--darker-color);
   &:hover {
     box-shadow: var(--shadow-hover);

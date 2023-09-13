@@ -22,8 +22,8 @@ export default {
 
 <style lang="scss">
 .introduction-section {
-  background-color: #edf2f7;
-  color: #718096;
+  background-color: #7fdb82;
+  color: #000000;
 }
 
 .introduction-section__heading {

@@ -53,7 +53,7 @@ export default {
 }
 
 .match-display__bar {
-  background-color: var(--theme-primary-dark-background); //bg-yellow-600
+  background-color: white; //bg-yellow-600
   border-radius: var(--border-radius);
   overflow: hidden;
   position: relative;
@@ -61,7 +61,7 @@ export default {
 }
 
 .match-display__progress {
-  background-color: #fff;
+  background-color: #7fdb82;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -91,7 +91,7 @@ export default {
 
 .match-display__party-description {
   margin-bottom: 2.5em;
-  color: #744210;
+  color: black;
   font-size: 0.875em;
   @media (min-width: 40em) {
     font-size: 1em;

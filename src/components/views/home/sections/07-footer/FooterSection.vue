@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-section">
+  <footer class="footer-section" style="">
     <PageSection class="footer-section__links" :padding="false">
       <nav>
         <ul>
@@ -52,7 +52,7 @@ export default {
   background-color: #e2e8f0;
   color: #fff;
   nav {
-    color: #718096;
+    color: #100122;
   }
   ul {
     @media (min-width: 48em) {
@@ -67,7 +67,8 @@ export default {
 }
 
 .footer-section__open-source {
-  background-color: #2d3748;
+  border-top: 20px solid #100122;
+  background: #100122;
 }
 
 .footer-section__logo {
