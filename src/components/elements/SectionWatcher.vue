@@ -102,13 +102,6 @@ export default {
           this.$store.dispatch('sections/enableGuideButton');
         }
       });
-
-      // Add compare section
-      this.$store.commit('sections/addSection', {
-        alias: 'compare',
-        completed: false,
-        message: 'compare',
-      });
       this.$watch('actualSection', (section) => {
         if (section && section.alias === 'compare') {
           this.$store.commit('sections/markSectionAsCompleted', 'compare');

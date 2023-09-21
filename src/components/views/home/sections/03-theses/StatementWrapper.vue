@@ -17,16 +17,6 @@
     <div class="statement-wrapper__statement">
       <StatementText :index="index" :status="status" />
     </div>
-
-    <!-- Buttons -->
-    <div class="statement-wrapper__skip">
-      <SkipButton
-        :disabled="skipButtonDisabled"
-        :tooltip-disabled="!skipButtonDisabled || status === 'skip'"
-        :max-skip="maxSkip"
-        @click="clickVoteButton('skip')"
-      />
-    </div>
     <div class="statement-wrapper__vote-buttons">
       <VoteButton
         v-for="(option, index) in algorithm.options"
@@ -40,17 +30,6 @@
         :active="status === option.alias"
         :data-test="`thesis-${index}-${option.alias}`"
         tabindex="0"
-      />
-    </div>
-
-    <!-- Important Toggle -->
-    <div class="statement-wrapper__important-button">
-      <ImportantButton
-        :name="`important-${index}`"
-        v-model:factor="factor"
-        :disabled="(status && direction === 'neutral') || maxImportantReached"
-        :tooltip-disabled="!maxImportantReached || direction === 'neutral' || status === 'skip'"
-        :max-important="maxImportant"
       />
     </div>
   </PageSection>
@@ -67,9 +46,7 @@ import VoteButton from '/src/components/views/home/sections/03-theses/VoteButton
 export default {
   name: 'StatementWrapper',
   components: {
-    ImportantButton,
     PageSection,
-    SkipButton,
     StatementText,
     VoteButton,
   },

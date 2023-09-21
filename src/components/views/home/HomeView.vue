@@ -1,9 +1,5 @@
 <template>
   <div>
-    <LanguageSwitch :visible="showLanguageSwitch" @close="showLanguageSwitch = false" />
-    <FriendsJoinModal :visible="showFriendsJoinModal" @close="showFriendsJoinModal = false" />
-    <FriendsInviteModal :visible="showFriendsInviteModal" @close="showFriendsInviteModal = false" />
-    <FriendsStatusBar />
     <MainNavigation
       @open-language-switch="showLanguageSwitch = true"
       @open-friends-join-modal="showFriendsJoinModal = true"
@@ -18,14 +14,12 @@
             <theses-section />
             <party-section v-if="thesesComplete" />
             <match-section v-if="partiesChosen" />
-            <compare-section v-if="partiesChosen" />
           </main>
           <footer-section />
           <guide-button v-if="ready" />
         </SectionWatcher>
       </template>
     </MainNavigation>
-    <KioskMode v-if="$store.getters['options/kioskMode']" />
   </div>
 </template>
 
@@ -68,15 +62,9 @@ export default {
     },
   },
   components: {
-    CompareSection,
     FooterSection,
-    FriendsInviteModal,
-    FriendsJoinModal,
-    FriendsStatusBar,
     GuideButton,
     IntroductionSection,
-    KioskMode,
-    LanguageSwitch,
     MainNavigation,
     MatchSection,
     SectionWatcher,

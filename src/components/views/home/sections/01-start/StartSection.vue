@@ -14,7 +14,6 @@
     <h1 class="start-section__heading">
       {{ $t('title') }}
     </h1>
-    <p class="start-section__subtitle">{{ $t('subtitle') }}</p>
   </PageSection>
 </template>
 
@@ -47,9 +46,10 @@ export default {
 }
 
 .start-section__heading {
+  font-family: Shrikhand, Lexend, sans-serif;
   // `align-self` needed for IE11
   align-self: center;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.25;
   text-align: center;
   max-width: 56em;

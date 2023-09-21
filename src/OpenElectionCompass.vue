@@ -303,8 +303,18 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Lexend';
+  src: local('Lexend'), url(../public/Lexend-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: local('Shrikhand'), url(../public/Shrikhand-Regular.ttf) format('truetype');
+}
+
 #oec-wrapper {
-  font-family: Arial, sans-serif;
+  font-family: Lexend, serif;
   color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -101,13 +101,13 @@
       }
     },
     "guide-button": {
-      "start": "Let's go",
-      "introduction": "Learn how this works",
-      "first-thesis": "Start with the first thesis",
-      "thesis": "Proceed to the next thesis",
-      "party": "Select the parties",
-      "match": "See your result",
-      "compare": "Read the statements"
+      "start": "Aloita",
+      "introduction": "Opi kuinka tämä toimii",
+      "first-thesis": "Siirry ensinmäiseen kysymykseen",
+      "thesis": "Jatka seuraavaan kysymykseen",
+      "party": "Valitse osa-alueet",
+      "match": "Katso tulokset",
+      "compare": ""
     },
     "kiosk-mode": {
       "heading": "Should we reset?",
@@ -140,21 +140,21 @@
       }
     },
     "open-election-compass-logo": {
-      "alt": "Logo of the Election Compass"
+      "alt": "Kimaran logo"
     },
     "show-more": {
-      "show": "show more",
-      "hide": "hide"
+      "show": "näytä enemmän",
+      "hide": "piilota"
     }
   },
   "views": {
     "home": {
       "home": {
-        "role-aria": "Election Compass"
+        "role-aria": "Pestikone - Kimara"
       },
       "start": {
         "section": {
-          "banner-aria": "Start section"
+          "banner-aria": "Aloitusosio"
         }
       },
       "theses": {
@@ -164,13 +164,13 @@
           "too-many-important": "There are only very few theses, so you cannot mark one as important. | Please mark no more than 1 thesis as important to receive a meaningful result! | Please mark no more than {count} theses as important to receive a meaningful result!"
         },
         "skip-button": {
-          "skip": "I don't know",
-          "skip-aria": "Skip – skips this thesis so it will not be counted.",
+          "skip": "En osaa vastata",
+          "skip-aria": "Ohita – ohita tämä kysymys ja sitä ei lasketa",
           "too-many-skip": "There are only very few theses, so you cannot skip one. | Please skip no more than 1 thesis to receive a meaningful result! | Please skip no more than {count} theses to receive a meaningful result!"
         },
         "statement-text": {
-          "thesis": "Thesis {count} / {total}",
-          "statement-aria": "The thesis is: '{statement}'",
+          "thesis": "Kysymys {count} / {total}",
+          "statement-aria": "Kysymys on: '{statement}'",
           "quoteStart": "‘",
           "quoteEnd": "’",
           "statement-badge": {
@@ -181,27 +181,27 @@
           }
         },
         "statement-wrapper": {
-          "role-aria": "Thesis",
-          "region-aria": "Thesis {count} of {total}"
+          "role-aria": "Kysymys",
+          "region-aria": "Kysymys {count} / {total}"
         }
       },
       "party": {
         "party-item": {
-          "party-aria": "Party '{party}' – click here to select or deselect this party for comparison."
+          "party-aria": "Osa-alue '{party}' – klikkaa tästä valitaksesi osa-alueen vertailuun"
         },
         "section": {
-          "heading": "Choose the parties you want to compare",
-          "instruction": "Please select the parties you want to compare your own decisions to. You can select as many parties as you like, but you have to select at least two. The following list is presented in the same order as the parties will appear on the ballot.",
-          "proceed": "Done"
+          "heading": "Valitse osa-alueet mitä haluat vertailla",
+          "instruction": "Valitse ne osa-alueet, joiden päätöksiin haluat verrata omia päätöksiäsi. Voit valita niin monta osa-aluetta kuin haluat, mutta sinun on valittava vähintään kaksi.",
+          "proceed": "Valmis"
         }
       },
       "match": {
         "match-display": {
-          "match-aria": "Your match for the party '{party}' is at {percentage} %"
+          "match-aria": "Sinun yhteensopivuus osa-alue '{party}' kanssa on {percentage} %"
         },
         "section": {
-          "heading": "Your result",
-          "explanation": "This chart describes how much you and the respective parties agreed on the above theses. The higher the percentage, the more your positions match. Keep in mind, that this is no voting recommendation, but a tool for orientation and discussion."
+          "heading": "Tuloksesi",
+          "explanation": "Tämä kaavio kuvaa kuinka paljon olette samaa mieltä yllä olevista kysymyksistä verrattuna kyseisiin osa-alueisiin. Mitä korkeampi prosenttiosuus, sitä enemmän kantanne ovat samanlaisia."
         }
       },
       "compare": {
@@ -312,7 +312,7 @@
   "algorithm": {
     "options": {
       "strongly-approve": {
-        "button": "Strongly approve",
+        "button": "Vahvasti samaa mieltä",
         "button-aria": "Strongly approve – click here to strongly approve this thesis!",
         "badge": "You strongly approved",
         "badge-aria": "You strongly approved this thesis.",
@@ -320,7 +320,7 @@
         "answer-aria": "The party '{party}' strongly approves this thesis with the following answer: {answer}"
       },
       "approve": {
-        "button": "Approve",
+        "button": "Samaa mieltä",
         "button-aria": "Approve – click here to approve this thesis!",
         "badge": "You approved",
         "badge-aria": "You approved this thesis.",
@@ -328,7 +328,7 @@
         "answer-aria": "The party '{party}' approves this thesis with the following answer: {answer}"
       },
       "neutral": {
-        "button": "Neutral",
+        "button": "Neutraali",
         "button-aria": "Neutral – click here to remain neutral regarding this thesis!",
         "badge": "You we're neutral",
         "badge-aria": "You we're neutral regarding this thesis.",
@@ -344,7 +344,7 @@
         "answer-aria": "The party '{party}' supports this thesis partly, providing the following answer: {answer}"
       },
       "reject": {
-        "button": "Reject",
+        "button": "Eri mieltä",
         "button-aria": "Reject – click here to reject this thesis!",
         "badge": "You rejected",
         "badge-aria": "You rejected this thesis.",
@@ -352,7 +352,7 @@
         "answer-aria": "The party '{party}' rejects this thesis with the following answer: {answer}"
       },
       "strongly-reject": {
-        "button": "Strongly reject",
+        "button": "Vahvasti eri mieltä",
         "button-aria": "Strongly reject – click here to strongly reject this thesis!",
         "badge": "You strongly rejected",
         "badge-aria": "You strongly rejected this thesis.",

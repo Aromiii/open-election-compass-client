@@ -5,7 +5,6 @@
       'statement-text--status-empty': status === null,
       'statement-text--status-skip': status === 'skip',
     }"
-    :style="cssVariables"
   >
     <!-- Counter and Title -->
     <small
@@ -16,9 +15,6 @@
     >
       <span class="statement-text__counter" aria-hidden="true">
         {{ $t('views.home.theses.statement-text.thesis', { count: index + 1, total }) }}
-      </span>
-      <span v-if="$root.$te(`theses.${index}.title`)" class="statement-text__title">
-        – {{ $t(`theses.${index}.title`) }}
       </span>
     </small>
 
@@ -138,12 +134,6 @@ export default {
       }
       return this.$t(`algorithm.options.${this.option.alias}.badge-aria`);
     },
-    cssVariables() {
-      return {
-        '--base-color': this.colors.base,
-        '--base-contrast': this.colors.contrast,
-      };
-    },
   },
 };
 </script>
@@ -176,8 +166,8 @@ export default {
 }
 
 .statement-text__thesis {
+  font-family: Shrikhand, Lexend, sans-serif;
   color: var(--base-color);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 1.35em;
   line-height: 1.25;
   font-weight: bold;
