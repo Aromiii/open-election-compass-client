@@ -5,10 +5,10 @@ export default {
       direction: 'positive',
       icon: 'check',
       colors: {
-        base: '#009a3d',
+        base: '#00b248',
         contrast: '#FFFFFF',
         lighter: '#C6F6D5',
-        darker: '#005d29',
+        darker: '#00803d',
       },
     },
     {
@@ -16,9 +16,9 @@ export default {
       direction: 'neutral',
       icon: 'minus',
       colors: {
-        base: '#7a8493',
+        base: '#84909f',
         contrast: '#FFFFFF',
-        darker: '#424957',
+        darker: '#545e6e',
         lighter: '#EDF2F7',
       },
     },
@@ -27,9 +27,9 @@ export default {
       direction: 'negative',
       icon: 'times',
       colors: {
-        base: '#ff4141',
+        base: '#ff0000',
         contrast: '#FFFFFF',
-        darker: '#a81010',
+        darker: '#8f0000',
         lighter: '#FED7D7',
       },
     },

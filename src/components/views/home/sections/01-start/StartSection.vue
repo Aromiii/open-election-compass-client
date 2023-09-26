@@ -1,20 +1,17 @@
 <template>
-  <PageSection
-    tag="header"
-    class="start-section"
-    data-section="start"
-    full
-    role="banner"
-    :aria-roledescription="$t('views.home.start.section.banner-aria')"
-  >
-    <!-- wrapping div needed for IE11 -->
-    <div class="start-section__logo">
-      <OpenElectionCompassLogo width="1em" />
+  <section data-id="4a6c06e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/kimara2024.fi\/wp-content\/uploads\/2023\/07\/Sivu-aallot_PITKA.mp4&quot;}">
+    <div style="position: relative;">
+      <video autoplay="" muted="" playsinline="" loop="" src="https://kimara2024.fi/wp-content/uploads/2023/07/Sivu-aallot_PITKA.mp4"></video>
+      <div class="start-section_text_and_logo">
+        <div class="start-section__logo">
+          <OpenElectionCompassLogo width="1em" />
+        </div>
+        <h1 class="start-section__heading">
+          {{ $t('title') }}
+        </h1>
+      </div>
     </div>
-    <h1 class="start-section__heading">
-      {{ $t('title') }}
-    </h1>
-  </PageSection>
+  </section>
 </template>
 
 <script>
@@ -25,19 +22,23 @@ export default {
   name: 'StartSection',
   components: {
     OpenElectionCompassLogo,
-    PageSection,
   },
 };
 </script>
 
 <style lang="scss">
-.start-section {
+.start-section_text_and_logo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
   text-align: center;
-  background: #ee5b61;
   color: white;
 }
 
 .start-section__logo {
+  width: 30%;
   display: inline-block;
   font-size: 4em;
   @media (min-width: 48em) {
@@ -51,9 +52,8 @@ export default {
   align-self: center;
   font-size: 2em;
   line-height: 1.25;
+  margin-top: 40px;
   text-align: center;
-  max-width: 56em;
-  margin: 2em auto 1em;
   @media (min-width: 38em) {
     font-size: 2em;
   }

@@ -191,17 +191,17 @@
         },
         "section": {
           "heading": "Valitse osa-alueet mitä haluat vertailla",
-          "instruction": "Valitse ne osa-alueet, joiden päätöksiin haluat verrata omia päätöksiäsi. Voit valita niin monta osa-aluetta kuin haluat, mutta sinun on valittava vähintään kaksi.",
+          "instruction": "Valitse ne osa-alueet, joita haluat verrata omiin päätöksiisi. Voit valita niin monta\nosa-aluetta kuin haluat, mutta sinun on valittava vähintään kaksi osa-aluetta\nvertailua varten.",
           "proceed": "Valmis"
         }
       },
       "match": {
         "match-display": {
-          "match-aria": "Sinun yhteensopivuus osa-alue '{party}' kanssa on {percentage} %"
+          "match-aria": "Sinun yhteensopivuus osa-alue \"{party}\" kanssa on {percentage} %"
         },
         "section": {
           "heading": "Tuloksesi",
-          "explanation": "Tämä kaavio kuvaa kuinka paljon olette samaa mieltä yllä olevista kysymyksistä verrattuna kyseisiin osa-alueisiin. Mitä korkeampi prosenttiosuus, sitä enemmän kantanne ovat samanlaisia."
+          "explanation": "Tämä kaavio kuvastaa, kuinka samanlaisia käsityksiä teillä on yllä olevista\nkysymyksistä verrattuna kyseisiin osa-alueisiin. Mitä korkeampi prosenttiosuus, sitä\nenemmän mielipiteenne ovat samankaltaisia."
         }
       },
       "compare": {

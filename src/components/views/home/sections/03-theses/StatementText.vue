@@ -166,7 +166,7 @@ export default {
 }
 
 .statement-text__thesis {
-  font-family: Shrikhand, Lexend, sans-serif;
+  font-family: Lexend, sans-serif;
   color: var(--base-color);
   font-size: 1.35em;
   line-height: 1.25;

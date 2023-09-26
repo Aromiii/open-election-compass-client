@@ -24,15 +24,9 @@
 </template>
 
 <script>
-import CompareSection from '/src/components/views/home/sections/06-compare/CompareSection.vue';
 import FooterSection from '/src/components/views/home/sections/07-footer/FooterSection.vue';
-import FriendsInviteModal from '/src/components/elements/FriendsInviteModal.vue';
-import FriendsJoinModal from '/src/components/elements/FriendsJoinModal.vue';
-import FriendsStatusBar from '/src/components/elements/FriendsStatusBar.vue';
 import GuideButton from '/src/components/elements/GuideButton.vue';
 import IntroductionSection from '/src/components/views/home/sections/02-introduction/IntroductionSection.vue';
-import KioskMode from '/src/components/elements/KioskMode.vue';
-import LanguageSwitch from '/src/components/elements/LanguageSwitch.vue';
 import MainNavigation from '/src/components/elements/MainNavigation.vue';
 import MatchSection from '/src/components/views/home/sections/05-match/MatchSection.vue';
 import SectionWatcher from '/src/components/elements/SectionWatcher.vue';
