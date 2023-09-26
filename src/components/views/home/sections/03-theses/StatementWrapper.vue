@@ -191,7 +191,9 @@ export default {
 
 .statement-wrapper__vote-buttons {
   display: flex;
-  flex-direction: column;
+  place-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 2em 1em 2em;
   @media (min-width: 48em) {
     flex-direction: row;

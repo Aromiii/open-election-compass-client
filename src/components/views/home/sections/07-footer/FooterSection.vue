@@ -13,7 +13,9 @@
     </PageSection>
     <PageSection class="footer-section__open-source">
       <div class="footer-section__project">
-        <OpenElectionCompassLogo class="footer-section__logo" width="50px" color="#718096" />
+        <a href="https://kimara2024.fi" class="footer-section__logo">
+          <OpenElectionCompassLogo class="footer-section__logo" width="50px" color="#718096" />
+        </a>
         <i18n-t
           class="footer-section__project-link"
           keypath="views.home.footer.section.explanation"
@@ -21,8 +23,8 @@
           for="oec"
         >
           <a href="https://open-election-compass.com" target="_blank">{{
-            $t('views.home.footer.section.oec')
-          }}</a>
+              $t("views.home.footer.section.oec")
+            }}</a>
         </i18n-t>
       </div>
     </PageSection>
@@ -30,20 +32,20 @@
 </template>
 
 <script>
-import OpenElectionCompassLogo from '/src/components/elements/OpenElectionCompassLogo.vue';
-import PageSection from '/src/components/elements/PageSection.vue';
+import OpenElectionCompassLogo from "/src/components/elements/OpenElectionCompassLogo.vue";
+import PageSection from "/src/components/elements/PageSection.vue";
 
 export default {
-  name: 'FooterSection',
+  name: "FooterSection",
   components: {
     PageSection,
-    OpenElectionCompassLogo,
+    OpenElectionCompassLogo
   },
   computed: {
     footerLinks() {
-      return this.$store.getters['footerLinks/links'];
-    },
-  },
+      return this.$store.getters["footerLinks/links"];
+    }
+  }
 };
 </script>
 

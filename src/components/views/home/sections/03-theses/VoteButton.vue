@@ -12,11 +12,6 @@
     @click="$emit('click', $event)"
   >
     <IconDisplay class="vote-button__icon" :name="icon" />
-    <div class="vote-button__caption">
-      <span>
-        {{ $t(`algorithm.options.${alias}.button`) }}
-      </span>
-    </div>
   </button>
 </template>
 
@@ -66,12 +61,12 @@ export default {
 
 <style lang="scss">
 .vote-button {
-  width: 100%;
-  text-align: left;
-  padding: 1.25em;
+  width: 120px;
+  height: 120px;
   font-weight: bold;
-  font-size: 0.875em;
-  margin: 0.25em 0;
+  font-size: 2em;
+  place-items: center;
+  margin: 0.25em;
   line-height: 1;
   border: 1px solid var(--theme-neutral-border);
   transition-property: background-color, border-color, color, opacity, box-shadow;
@@ -92,44 +87,10 @@ export default {
     color: var(--contrast-color);
     border-color: var(--darker-color);
   }
-  @media (min-width: 40em) {
-    font-size: 1em;
-  }
-  @media (min-width: 48em) {
-    text-align: center;
-    margin: 0 0.5em;
-    font-size: 1.125em;
-    flex: 1 1 0%;
-  }
-  @media (min-width: 64em) {
-    font-size: 1.25em;
-  }
 }
 
 .vote-button__icon {
-  @media (min-width: 48em) {
-    margin-bottom: 0.25em;
-  }
-}
-
-@media (min-width: 48em) {
-  .vote-button--large-icons {
-    .vote-button__icon {
-      font-size: 1.875em;
-    }
-    .vote-button__caption {
-      font-size: 0.875em;
-      min-height: 2em;
-    }
-  }
-}
-
-@media (min-width: 64em) {
-  .vote-button--large-icons {
-    .vote-button__icon {
-      font-size: 2.25em;
-    }
-  }
+  font-size: 2em;
 }
 
 .vote-button__caption {
