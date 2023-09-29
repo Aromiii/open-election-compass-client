@@ -54,13 +54,16 @@ export default {
     color: #100122;
   }
   ul {
-    @media (min-width: 48em) {
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
   a {
+    @media screen and (max-width: 780px) {
+      font-size: 20px;
+      padding: 20px 30px;
+    }
+
     font-family: Lexend, sans-serif;
     font-size: 25px;
     font-weight: 700;
@@ -70,6 +73,10 @@ export default {
     border-radius: 100px;
   }
   a:hover {
+    @media screen and (max-width: 780px) {
+      font-size: 20px;
+      padding: 22px 50px;
+    }
     padding: 25px 70px;
   }
 }
