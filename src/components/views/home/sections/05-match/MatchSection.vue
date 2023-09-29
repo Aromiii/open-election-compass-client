@@ -57,11 +57,15 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @media screen and (max-width: 550px) {
+      gap: 25px;
+    }
   }
   a {
-    @media screen and (max-width: 780px) {
-      font-size: 20px;
-      padding: 20px 30px;
+    @media screen and (max-width: 550px) {
+      font-size: 15px;
+      padding: 10px 15px;
+      overflow: hidden;
     }
 
     font-family: Lexend, sans-serif;
@@ -73,10 +77,11 @@ export default {
     border-radius: 100px;
   }
   a:hover {
-    @media screen and (max-width: 780px) {
-      font-size: 20px;
-      padding: 22px 50px;
+    @media screen and (max-width: 550px) {
+      padding: 15px 15px;
     }
+
+    color: white;
     padding: 25px 70px;
   }
 }
