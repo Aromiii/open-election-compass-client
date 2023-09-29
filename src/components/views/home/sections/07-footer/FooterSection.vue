@@ -1,16 +1,5 @@
 <template>
   <footer class="footer-section" style="">
-    <PageSection class="footer-section__links" :padding="false">
-      <nav>
-        <ul>
-          <li v-for="(link, index) in footerLinks" :key="index">
-            <a :href="$t(`footer-links.${index}.href`)" target="_blank">
-              {{ $t(`footer-links.${index}.text`) }}
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </PageSection>
     <PageSection class="footer-section__open-source">
       <div class="footer-section__project">
         <a href="https://kimara2024.fi" class="footer-section__logo">
@@ -41,33 +30,10 @@ export default {
     PageSection,
     OpenElectionCompassLogo
   },
-  computed: {
-    footerLinks() {
-      return this.$store.getters["footerLinks/links"];
-    }
-  }
 };
 </script>
 
 <style lang="scss">
-.footer-section__links {
-  background-color: #e2e8f0;
-  color: #fff;
-  nav {
-    color: #100122;
-  }
-  ul {
-    @media (min-width: 48em) {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  a {
-    padding: 1em;
-    display: block;
-  }
-}
-
 .footer-section__open-source {
   border-top: 20px solid #100122;
   background: #100122;

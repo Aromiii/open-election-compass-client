@@ -11,6 +11,15 @@
         <MatchDisplay :party="party" :percentage="percentage" />
       </li>
     </ul>
+    <nav class="match-section__links">
+      <ul>
+        <li v-for="(link, index) in footerLinks" :key="index">
+          <a :href="$t(`footer-links.${index}.href`)" target="_blank">
+            {{ $t(`footer-links.${index}.text`) }}
+          </a>
+        </li>
+      </ul>
+    </nav>
   </PageSection>
 </template>
 
@@ -31,11 +40,40 @@ export default {
       theses: 'theses/theses',
       results: 'parties/results',
     }),
+    footerLinks() {
+      return this.$store.getters["footerLinks/links"];
+    }
   },
 };
 </script>
 
 <style lang="scss">
+.match-section__links {
+  color: #ffb16f;
+  nav {
+    color: #100122;
+  }
+  ul {
+    @media (min-width: 48em) {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+  a {
+    font-family: Lexend, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 0.3s;
+    padding: 20px 40px;
+    background: #100122;
+    border-radius: 100px;
+  }
+  a:hover {
+    padding: 25px 70px;
+  }
+}
+
 .match-section {
   background-color: #ee5b61;
 }
