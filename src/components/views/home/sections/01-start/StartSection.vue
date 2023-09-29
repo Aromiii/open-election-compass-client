@@ -1,7 +1,7 @@
 <template>
-  <section data-id="4a6c06e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/kimara2024.fi\/wp-content\/uploads\/2023\/07\/Sivu-aallot_PITKA.mp4&quot;}">
+  <section style="max-height: 80vh" data-id="4a6c06e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/kimara2024.fi\/wp-content\/uploads\/2023\/07\/Sivu-aallot_PITKA.mp4&quot;}">
     <div style="position: relative;">
-      <video autoplay="" muted="" playsinline="" loop="" src="https://kimara2024.fi/wp-content/uploads/2023/07/Sivu-aallot_PITKA.mp4"></video>
+      <video style="max-height: 80vh; width: 100%; object-fit: fill" autoplay="" muted="" playsinline="" loop="" src="https://kimara2024.fi/wp-content/uploads/2023/07/Sivu-aallot_PITKA.mp4"></video>
       <div class="start-section_text_and_logo">
         <div class="start-section__logo">
           <OpenElectionCompassLogo width="1em" />
@@ -28,6 +28,7 @@ export default {
 
 <style lang="scss">
 .start-section_text_and_logo {
+  margin-top: 0px;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -52,7 +53,7 @@ export default {
   align-self: center;
   font-size: 2em;
   line-height: 1.25;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   @media (min-width: 38em) {
     font-size: 2em;
