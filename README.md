@@ -1,26 +1,13 @@
-Easy to use voting advice application – create your own election compass. Free and open source.
+[![OpenElectionCompass](https://kimara2024.fi/wp-content/uploads/2023/05/Kimara24_Logoydistelma_VM_SVG.svg)](https://kimara2024.fi/)
 
-![OpenElectionCompass](documentation/assets/title.png)
+[Visit pestikone website](https://pestikone.kimara2024.fi/)
+[Visit main website](https://kimara2024.fi/)
 
-[![Join the community on GitHub Discussions](https://img.shields.io/badge/join%20the%20community-on%20GitHub%20Discussions-%23535ae8)](https://github.com/open-election-compass/client/discussions)
-[![Financial contributors](https://opencollective.com/openelectioncompass/tiers/badge.svg)](https://opencollective.com/openelectioncompass)
-
-# OpenElectionCompass
+# Pestikone - Kimara2024
 
 ## Project state
 
-Version 1.0.0 is still under development and coverage of automated tests is not complete. It can
-already be used in production. Sign up for our [newsletter](http://eepurl.com/gRApTD) to stay in the
-loop. Join us on [GitHub Discussions](https://spectrum.chat/openelectioncompass) for technical
-support, questions, feature requests and chatting.
-
-## Usage
-
-### Organisation Guide: How to run your own election compass
-
-Learn how to run your own election compass, how to come up with and validate theses, how to approach
-parties and how to attract the attention of the public from our
-[Organisation Guide](https://open-election-compass.com/guide/organisation/01-introduction.html).
+This is Kimara's pestikone built on top of [Open election compass](https://open-election-compass.com/). This heavily modified and many unnecessary features are removed. 
 
 ### Technical Guide
 
